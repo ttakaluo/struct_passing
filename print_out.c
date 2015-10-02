@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "info.h"
+#include "print_out.h"
 
-void *print_out(void *arguments){
+void print_out(void *arguments) {
 
 	struct arg_struct *args; 
 	args = (struct arg_struct*) arguments;

@@ -1,7 +1,7 @@
 #ifndef PRINTOUT_H
 #define PRINTOUT_H
 
-void print_out(void * arg);
+void print_out(void * arguments);
 
 struct arg_struct {
 
