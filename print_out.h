@@ -1,11 +1,6 @@
 #ifndef PRINTOUT_H
 #define PRINTOUT_H
 
-void print_out(void * arguments);
-
-void print_all(int iterations, void *numbers);
-
-
 struct calc {
 
 	int sum;
@@ -22,6 +17,10 @@ struct arg_struct {
 	int arg1;
 	int arg2;
 };
+
+void print_out(void * arguments);
+
+int print_all(struct data *data);
 
 int write_all(int iterations, int value, struct data *data);
 
