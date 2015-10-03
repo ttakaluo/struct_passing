@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS= -Wall -I.
+CFLAGS= -Wall -Wextra -I.
 EXE_NAME = print
 FILES = print_out.o main.o
 all: $(FILES)

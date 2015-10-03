@@ -14,7 +14,7 @@ struct calc {
 struct data {
 
 	struct calc *calc;
-	int count;
+	size_t count;
 };
 
 struct arg_struct {

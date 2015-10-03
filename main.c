@@ -22,7 +22,11 @@ int main(int argc, char *argv[]) {
 	value 		= atoi(argv[2]);
 
 	print_out((void *) &args);
+	if(0) {
+		print_all(iterations, &args);
+	}
 
+	write_all(iterations, value, &data);
 	write_all(iterations, value, &data);
 
 	return 0;
