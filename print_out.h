@@ -5,7 +5,6 @@ void print_out(void * arguments);
 
 void print_all(int iterations, void *numbers);
 
-void write_all(int iterations, int value, void *data);
 
 struct calc {
 
@@ -23,5 +22,7 @@ struct arg_struct {
 	int arg1;
 	int arg2;
 };
+
+int write_all(int iterations, int value, struct data *data);
 
 #endif

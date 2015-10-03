@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <strings.h>
 #include "print_out.h"
 
 int main(int argc, char *argv[]) {
@@ -11,6 +12,7 @@ int main(int argc, char *argv[]) {
 
 	struct arg_struct args;
 	struct data data;
+	bzero(&data, sizeof(data));
 
 	int iterations, value;
 

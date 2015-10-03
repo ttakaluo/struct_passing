@@ -13,14 +13,20 @@ void print_all(int iterations, void *numbers) {
 	
 }
 
-void write_all(int iterations, int value, void *data) {
+int write_all(int iterations, int value, struct data *data) {
 
 	int i;
 
-	for( i = 0; i < iterations; i++) {
-
-		printf("Iteration: %d\n", i);
+	for( i = 0; i < data->count; i++) {
+		printf(" First iteration loop: %d\n", i);
 	}
 
+	data->count = iterations;
+
+	for( i = 0; i < data->count; i++) {
+		printf("Second iteration loop: %d\n", i);
+	}
+
+	return 0;
 }
 
