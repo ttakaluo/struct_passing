@@ -4,18 +4,24 @@
 
 int main(int argc, char *argv[]) {
 
-
 	if ( argc != 3 ) {
 		printf ("usage: %s iterations num1\n", argv[0] );
 		exit(-1);
 	}
 
 	struct arg_struct args;
+	struct data data;
 
-	args.arg1 = atoi(argv[1]);
-	args.arg2 = atoi(argv[2]);
+	int iterations, value;
+
+	args.arg1 	= atoi(argv[1]);
+	iterations	= atoi(argv[1]);
+	args.arg2 	= atoi(argv[2]);
+	value 		= atoi(argv[2]);
 
 	print_out((void *) &args);
+
+	write_all(iterations, value, &data);
 
 	return 0;
 }
